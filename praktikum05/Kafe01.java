@@ -23,7 +23,7 @@ public class Kafe01{
         switch (menu.toLowerCase()) {
             case "kopi":
                 hargaMenu = 12000;
-                break;
+                ;
             case "teh":
                 hargaMenu = 8000;
                 break;
@@ -45,14 +45,17 @@ public class Kafe01{
                 break;
             case 'M':
                 totalHarga *= 1.25;
-                break;
-            case 'L':
+            break;
+             case 'L':
                 totalHarga *= 1.5;
-                break;
-            default:
-                System.out.println("Ukuran cup tidak valid");
-                return;
+            break;
+        default:
+        System.out.println("Ukuran cup tidak valid");
+            return; // Keluar dari program jika ukuran tidak valid
+
         }
+
+// ... (kode selanjutnya)
 
         // Tentukan diskon berdasarkan status keanggotaan
         double diskon = keanggotaan ? 0.1 : 0; // Diskon 10% jika anggota
