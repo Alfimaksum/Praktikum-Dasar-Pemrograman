@@ -1,5 +1,8 @@
 public class ContohVariabel01 {
 
+    /**
+     * @param args
+     */
     @SuppressWarnings("unused")
     public static void main(String[] args) {
         
