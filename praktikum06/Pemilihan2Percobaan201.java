@@ -6,8 +6,8 @@ public class Pemilihan2Percobaan201 {
         @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
 
-        int PilihanMenu;
-        String Member;
+        String Member, MetodePembayaran;
+        int PilihanMenu, potonganQris = 1000;
         double TotalBayar, Harga, Diskon;
 
         // Tampilkan menu
@@ -63,10 +63,18 @@ public class Pemilihan2Percobaan201 {
                 //Menghitung total bayar
                 System.out.println("Total bayar = " + Harga);
 
+                
             } else{
                 System.out.println("Member Tidak Valid");
             }
-            System.out.println("-----------------------------------------------");
+            System.out.print("Metode Pembayaran (tunai/QIRIS): ");
+            MetodePembayaran = sc.nextLine();
+            double hargaAkhir = TotalBayar - Harga;
+            if (MetodePembayaran.equalsIgnoreCase("QIRIS")){
+                Harga -= potonganQris;
+                System.out.println("harga" + hargaAkhir);
+            }
+            System.out.println("----------------------------------------");
         }
     }
 }

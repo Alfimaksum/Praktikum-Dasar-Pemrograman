@@ -22,6 +22,7 @@ public class Pemilihan2Percobaan301 {
                 pajak = 0.15;
             else
                 pajak = 0.2;
+            gajiBersih = (int) (penghasilah - (penghasilah * pajak));
             System.out.print("penghas bersih: " + penghasilah);
         } else if (kategori.equalsIgnoreCase("Pebisnis")) {
             if (penghasilah <= 2500000)
@@ -30,6 +31,7 @@ public class Pemilihan2Percobaan301 {
                 pajak = 0.2;
             else
                 pajak = 0.25;
+            gajiBersih = (int) (penghasilah - (penghasilah * pajak));
             System.out.print("penghas bersih: " + penghasilah);
         } else 
         System.out.println("Masukkan Kategori Salah.");
